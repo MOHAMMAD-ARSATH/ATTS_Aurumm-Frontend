@@ -28,7 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "clean": "rimraf build",
+    "predeploy": "npm run clean && npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -51,6 +52,7 @@
   },
   "proxy": "https://atts-aurumm-backend.onrender.com",
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "rimraf": "^5.0.10"
   }
 }

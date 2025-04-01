@@ -39,7 +39,7 @@ const cardData = [
 
 const AUCards = () => {
   return (
-    <div className="au-cards-section">
+    <div className="au-cards-section" id="au-cards">
       <h4 className="card-heading1">FEATURED APPS</h4>
       <h2 className="card-heading2">AURUMM for Your Jewellery Business</h2>
 

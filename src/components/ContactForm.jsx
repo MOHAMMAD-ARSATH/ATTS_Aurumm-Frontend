@@ -9,7 +9,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "+91",
+    phone: "+91 ",
     budget: "",
     message: "",
   });
@@ -17,7 +17,6 @@ const ContactForm = () => {
   const [errors, setErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
 
-  // Validate Fields on Change
   const validateField = (name, value) => {
     let error = "";
 
@@ -43,14 +42,12 @@ const ContactForm = () => {
 
     setErrors((prev) => ({ ...prev, [name]: error }));
 
-    // Check if form is fully valid
     const allValid = Object.values({ ...errors, [name]: error }).every(
       (err) => err === ""
     );
     setIsFormValid(allValid);
   };
 
-  // Handle Input Change + Live Validation
   const handleChange = (e) => {
     let { name, value } = e.target;
 
@@ -66,7 +63,6 @@ const ContactForm = () => {
     validateField(name, value);
   };
 
-  // Handle Form Submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 

@@ -5,6 +5,7 @@ import moment from "moment";
 
 const ContactTable = () => {
   const API_URL = process.env.REACT_APP_API_URL;
+  
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const rowsPerPage = 5;
@@ -30,7 +31,7 @@ const ContactTable = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [data]);
 
   useEffect(() => {
     const checkScroll = () => {

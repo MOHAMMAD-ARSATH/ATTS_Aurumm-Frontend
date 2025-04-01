@@ -63,7 +63,7 @@ const Footer = () => {
               <li className="mb-2">
                 <span
                   className="footer-text"
-                  onClick={() => handleNavigation("au-pay")}
+                  onClick={() => handleNavigation("au-cards")}
                 >
                   Product
                 </span>

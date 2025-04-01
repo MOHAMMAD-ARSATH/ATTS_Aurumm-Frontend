@@ -708,6 +708,13 @@
   }
 }
 
+@media (max-width: 576px) {
+  .feature-stats .stat-box .stat-number .stat-degree {
+     margin-top: 2px;
+     height: 22px;
+  }
+}
+
 
 /* Client Slider Section */
 .clients-slider-container {

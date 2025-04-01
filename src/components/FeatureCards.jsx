@@ -88,7 +88,7 @@ const FeatureCards = () => {
                   {counts[index]}
                   {stat.suffix}
                   <sup>
-                    <img src={StarFeature} alt="Star Degree" />
+                    <img src={StarFeature} alt="Star Degree" className="stat-degree" />
                   </sup>
                 </span>
                 <span className="stat-label">{stat.label}</span>

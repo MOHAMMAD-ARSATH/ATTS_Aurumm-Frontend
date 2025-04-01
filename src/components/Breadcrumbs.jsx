@@ -24,7 +24,6 @@ const Breadcrumbs = ({ paths }) => {
       style={{
         background: `linear-gradient(to bottom, rgba(97, 163, 117, 0.8), rgba(216, 183, 112, 0.8)), 
         url('${BannerBg}') no-repeat center center`,
-        // backgroundSize: "cover",
         backgroundBlendMode: "overlay",
         backgroundSize: "100% 140%",
         color: "black",

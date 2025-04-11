@@ -21,9 +21,9 @@ const ContactForm = () => {
     let error = "";
 
     if (name === "name") {
-      error = /^[a-zA-Z\s]{4,}$/.test(value)
+      error = /^[a-zA-Z\s]{3,}$/.test(value)
         ? ""
-        : "Name must be at least 4 letters & contain only alphabets.";
+        : "Name must be atleast 3 letters & contain only alphabets.";
     } else if (name === "email") {
       error = /^\S+@\S+\.\S+$/.test(value) ? "" : "Enter a valid email address.";
     } else if (name === "phone") {
@@ -34,11 +34,11 @@ const ContactForm = () => {
       error = /^\d{1,3}(,\d{3})*$/.test(value)
         ? ""
         : "Enter a valid budget (e.g., 10,000).";
-    } else if (name === "message") {
-      error = /^[a-zA-Z0-9\s.,!?]{10,}$/.test(value)
+    }else if (name === "message") {
+      error = /^[a-zA-Z0-9\s.,!?'"@#$%^&*()_+\-=\[\]{};:\\|<>\/?]{10,}$/.test(value)
         ? ""
         : "Message must be at least 10 characters.";
-    }
+    }    
 
     setErrors((prev) => ({ ...prev, [name]: error }));
 

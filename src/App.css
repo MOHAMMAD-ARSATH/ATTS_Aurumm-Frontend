@@ -869,6 +869,7 @@
 /* BreadCrumbs Section */
 .breadcrumb-path {
   color: #000000;
+  font-size: 1.2rem !important;
 }
 
 .breadcrumb-item a {
